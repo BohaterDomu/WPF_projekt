@@ -25,12 +25,16 @@ namespace WpfApp
 
             HospitalManagementDBEntities db = new HospitalManagementDBEntities();
             var docs = from d in db.Doctor
-                       select d;
+                       select new
+                       {
+                           DoctorName = d.Name,
+                           Speciality = d.Specialization
+                       };
 
             foreach (var item in docs)
             {
-                Console.WriteLine(item.Name);
-                Console.WriteLine(item.Qualification);
+                Console.WriteLine(item.DoctorName);
+                Console.WriteLine(item.Speciality);
             }
 
             this.gridDoctors.ItemsSource = docs.ToList();
