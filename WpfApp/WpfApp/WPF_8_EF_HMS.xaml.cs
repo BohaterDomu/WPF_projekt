@@ -60,8 +60,31 @@ namespace WpfApp
         private void btnLoadDoctors_Click(object sender, RoutedEventArgs e)
         {
             HospitalManagementDBEntities1 db = new HospitalManagementDBEntities1();
-
+             
             this.gridDoctors.ItemsSource = db.Doctors.ToList();
+        }
+
+        private void GridDoctors_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Console.WriteLine(this.gridDoctors.SelectedItem);
+        }
+
+        private void btnUpdateDoctor_Click(object sender, RoutedEventArgs e)
+        {
+            HospitalManagementDBEntities1 db = new HospitalManagementDBEntities1();
+            var r = from d in db.Doctors
+                    where d.Id == 1
+                    select d;
+
+            foreach (var item in r)
+            {
+                MessageBox.Show(item.Name);
+                item.Name = "Dr. Ahmed Updated!";
+            }
+
+            db.SaveChanges();
+
+
         }
     }
 }
