@@ -39,5 +39,20 @@ namespace WpfApp
 
             this.gridDoctors.ItemsSource = docs.ToList();
         }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            HospitalManagementDBEntities db = new HospitalManagementDBEntities();
+
+            Doctor doctorObject = new Doctor()
+            { 
+                Name = "Dr. Hardcodowany Doctor",
+                Qualification = "High_Doctor",
+                Specialization = "Very Special"
+            };
+
+            db.Doctors.Add
+
+        }
     }
 }

@@ -13,10 +13,10 @@ namespace WpfApp
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class HospitalManagementDBEntities : DbContext
+    public partial class HospitalManagementDBEntities1 : DbContext
     {
-        public HospitalManagementDBEntities()
-            : base("name=HospitalManagementDBEntities")
+        public HospitalManagementDBEntities1()
+            : base("name=HospitalManagementDBEntities1")
         {
         }
     
@@ -25,6 +25,6 @@ namespace WpfApp
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Doctor> Doctor { get; set; }
+        public virtual DbSet<Doctor> Doctors { get; set; }
     }
 }
