@@ -23,8 +23,8 @@ namespace WpfApp
         {
             InitializeComponent();
 
-            HospitalManagementDBEntities db = new HospitalManagementDBEntities();
-            var docs = from d in db.Doctor
+            HospitalManagementDBEntities1 db = new HospitalManagementDBEntities1();
+            var docs = from d in db.Doctors
                        select new
                        {
                            DoctorName = d.Name,
@@ -42,17 +42,26 @@ namespace WpfApp
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            HospitalManagementDBEntities db = new HospitalManagementDBEntities();
+            HospitalManagementDBEntities1 db = new HospitalManagementDBEntities1();
 
             Doctor doctorObject = new Doctor()
             { 
-                Name = "Dr. Hardcodowany Doctor",
-                Qualification = "High_Doctor",
-                Specialization = "Very Special"
+                Name = txtName.Text,
+                Qualification = txtQualification.Text,
+                Specialization = txtSpecialization.Text
             };
 
-            db.Doctors.Add
+            db.Doctors.Add(doctorObject);
+            db.SaveChanges();
 
+
+        }
+
+        private void btnLoadDoctors_Click(object sender, RoutedEventArgs e)
+        {
+            HospitalManagementDBEntities1 db = new HospitalManagementDBEntities1();
+
+            this.gridDoctors.ItemsSource = db.Doctors.ToList();
         }
     }
 }

@@ -82,6 +82,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Doctor.cs">
+      <DependentUpon>HospitalManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalManagementSystemModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalManagementSystemModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalManagementSystemModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalManagementSystemModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalManagementSystemModels.edmx</DependentUpon>
+    </Compile>
     <Compile Include="WPF_8_EF_HMS.xaml.cs">
       <DependentUpon>WPF_8_EF_HMS.xaml</DependentUpon>
     </Compile>
@@ -92,24 +110,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Doctor.cs">
-      <DependentUpon>HospitalManagmentSystemModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="HospitalManagmentSystemModels.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HospitalManagmentSystemModels.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="HospitalManagmentSystemModels.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HospitalManagmentSystemModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="HospitalManagmentSystemModels.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HospitalManagmentSystemModels.edmx</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -138,12 +138,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="HospitalManagmentSystemModels.edmx">
+    <EntityDeploy Include="HospitalManagementSystemModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>HospitalManagmentSystemModels.Designer.cs</LastGenOutput>
+      <LastGenOutput>HospitalManagementSystemModels.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="HospitalManagmentSystemModels.edmx.diagram">
-      <DependentUpon>HospitalManagmentSystemModels.edmx</DependentUpon>
+    <None Include="HospitalManagementSystemModels.edmx.diagram">
+      <DependentUpon>HospitalManagementSystemModels.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -162,15 +162,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>HospitalManagementDB.mdf</DependentUpon>
     </Content>
-    <Content Include="HospitalManagmentSystemModels.Context.tt">
+    <Content Include="HospitalManagementSystemModels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>HospitalManagmentSystemModels.edmx</DependentUpon>
-      <LastGenOutput>HospitalManagmentSystemModels.Context.cs</LastGenOutput>
+      <DependentUpon>HospitalManagementSystemModels.edmx</DependentUpon>
+      <LastGenOutput>HospitalManagementSystemModels.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="HospitalManagmentSystemModels.tt">
+    <Content Include="HospitalManagementSystemModels.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>HospitalManagmentSystemModels.edmx</DependentUpon>
-      <LastGenOutput>HospitalManagmentSystemModels.cs</LastGenOutput>
+      <DependentUpon>HospitalManagementSystemModels.edmx</DependentUpon>
+      <LastGenOutput>HospitalManagementSystemModels.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -9,12 +9,13 @@
     <Grid>
         <DataGrid x:Name="gridDoctors" HorizontalAlignment="Left" Height="122" VerticalAlignment="Top" Width="772" Margin="10,287,0,0"/>
         <Label Content="Name:" HorizontalAlignment="Left" Height="30" Margin="30,35,0,0" VerticalAlignment="Top" Width="125" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
-        <TextBox x:Name="txtSpecialization" HorizontalAlignment="Left" Height="30" Margin="160,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="30" Margin="160,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <Label Content="Specialization:" HorizontalAlignment="Left" Height="30" Margin="30,89,0,0" VerticalAlignment="Top" Width="125" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
-        <TextBox x:Name="txtName_Copy" HorizontalAlignment="Left" Height="30" Margin="160,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <TextBox x:Name="txtSpecialization" HorizontalAlignment="Left" Height="30" Margin="160,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <Label Content="Qualification:" HorizontalAlignment="Left" Height="30" Margin="30,138,0,0" VerticalAlignment="Top" Width="124" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <TextBox x:Name="txtQualification" HorizontalAlignment="Left" Height="30" Margin="160,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
-        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="293,194,0,0" VerticalAlignment="Top" Width="115" Height="35" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="293,194,0,0" VerticalAlignment="Top" Width="115" Height="35" FontSize="20" FontWeight="Bold" Click="BtnAdd_Click"/>
+        <Button x:Name="btnLoadDoctors" Content="Load Doctors" HorizontalAlignment="Left" Margin="10,247,0,0" VerticalAlignment="Top" Width="145" Height="35" FontSize="20" FontWeight="Bold" Click="btnLoadDoctors_Click"/>
 
     </Grid>
 </Window>
