@@ -7,16 +7,23 @@
         mc:Ignorable="d"
         Title="WPF_8_EF_HMS" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="gridDoctors" HorizontalAlignment="Left" Height="122" VerticalAlignment="Top" Width="772" Margin="10,287,0,0"/>
+        <DataGrid x:Name="gridDoctors" HorizontalAlignment="Left" Height="122" VerticalAlignment="Top" Width="424" Margin="10,287,0,0"/>
         <Label Content="Name:" HorizontalAlignment="Left" Height="30" Margin="30,35,0,0" VerticalAlignment="Top" Width="125" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="30" Margin="160,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <Label Content="Specialization:" HorizontalAlignment="Left" Height="30" Margin="30,89,0,0" VerticalAlignment="Top" Width="125" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <TextBox x:Name="txtSpecialization" HorizontalAlignment="Left" Height="30" Margin="160,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <Label Content="Qualification:" HorizontalAlignment="Left" Height="30" Margin="30,138,0,0" VerticalAlignment="Top" Width="124" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
         <TextBox x:Name="txtQualification" HorizontalAlignment="Left" Height="30" Margin="160,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
-        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="293,194,0,0" VerticalAlignment="Top" Width="115" Height="35" FontSize="20" FontWeight="Bold" Click="BtnAdd_Click"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="431,39,0,0" VerticalAlignment="Top" Width="115" Height="35" FontSize="20" FontWeight="Bold" Click="BtnAdd_Click"/>
         <Button x:Name="btnLoadDoctors" Content="Load Doctors" HorizontalAlignment="Left" Margin="10,247,0,0" VerticalAlignment="Top" Width="145" Height="35" FontSize="20" FontWeight="Bold" Click="btnLoadDoctors_Click"/>
         <Button x:Name="btnUpdateDoctor" Content="Update Doctor" HorizontalAlignment="Left" Margin="637,247,0,0" VerticalAlignment="Top" Width="145" Height="35" FontSize="20" FontWeight="Bold" Click="btnUpdateDoctor_Click"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="25" Margin="439,298,0,0" VerticalAlignment="Top" Width="108" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <TextBox x:Name="txtName2" HorizontalAlignment="Left" Height="25" Margin="551,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <Label Content="Specialization:" HorizontalAlignment="Left" Height="25" Margin="439,343,0,0" VerticalAlignment="Top" Width="108" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <TextBox x:Name="txtSpecialization2" HorizontalAlignment="Left" Height="25" Margin="551,343,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <Label Content="Qualification:" HorizontalAlignment="Left" Height="25" Margin="439,384,0,0" VerticalAlignment="Top" Width="107" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <TextBox x:Name="txtQualification2" HorizontalAlignment="Left" Height="25" Margin="551,384,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" FontSize="16" FontFamily="Microsoft New Tai Lue"/>
+        <Button x:Name="btnDeleteDoctor" Content="Delete Doctor" HorizontalAlignment="Left" Margin="289,247,0,0" VerticalAlignment="Top" Width="145" Height="35" FontSize="20" FontWeight="Bold" Click="btnDeleteDoctor_Click"/>
 
     </Grid>
 </Window>
