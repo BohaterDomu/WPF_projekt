@@ -66,7 +66,16 @@ namespace WpfApp
 
         private void GridDoctors_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Console.WriteLine(this.gridDoctors.SelectedItem);
+            if (this.gridDoctors.SelectedItems.Count >= 0)
+            {
+                if (this.gridDoctors.SelectedItems[0].GetType() == typeof(Doctor))
+                {
+                    Doctor d = (Doctor)this.gridDoctors.SelectedItem;
+                    this.txtName2.Text = d.Name;
+                    this.txtSpecialization2.Text = d.Specialization;
+                    this.txtQualification2.Text = d.Qualification;
+                }
+            }
         }
 
         private void btnUpdateDoctor_Click(object sender, RoutedEventArgs e)
